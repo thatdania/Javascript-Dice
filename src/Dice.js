@@ -26,7 +26,13 @@ Dice.prototype.total_score = function(){
 Dice.prototype.outcome = function(){
   if(this.total <= 2){
      return "Shit luck, keep going"
-  } else {
+  }
+
+  else if(this.total >= 10) {
+    return "Fab luck! You're ready to gamble"
+  }
+
+  else {
     return this.total
   }
 }

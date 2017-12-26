@@ -47,6 +47,12 @@ describe("Dice", function() {
    expect(dice.outcome()).toBe("Shit luck, keep going")
  });
 
-
+ it("should prompt you have shit luck if your total is more than 10", function(){
+   spyOn(Math, 'random').and.returnValue(0.9);
+   dice.rollone();
+   dice.rolltwo();
+   dice.total_score();
+   expect(dice.outcome()).toBe("Fab luck! You're ready to gamble")
+ });
 
 });
