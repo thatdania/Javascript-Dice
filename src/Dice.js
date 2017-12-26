@@ -1,13 +1,18 @@
 function Dice() {
-  this.score = 0
+  this.score1 = 0
+  this.score2 = 0
   this.die1 = 0
   this.die2 = 0
 }
 
-Dice.prototype.roll = function(){
+Dice.prototype.rollone = function(){
   this.die1 =  Math.floor(Math.random() * 6) + 1;
-  console.log(this.die1)
-  this.score = this.die1
-  console.log(this.score)
-  return this.score
+  this.score1 = this.die1
+  return this.score1
+}
+
+Dice.prototype.rolltwo = function(){
+  this.die2 = Math.floor(Math.random() * 6) + 1;
+  this.score2 = this.die2
+  return this.score2
 }
