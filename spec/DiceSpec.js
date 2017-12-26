@@ -48,11 +48,19 @@ describe("Dice", function() {
  });
 
  it("should prompt you have shit luck if your total is more than 10", function(){
-   spyOn(Math, 'random').and.returnValue(0.9);
+   spyOn(Math, 'random').and.returnValue(0.8);
    dice.rollone();
    dice.rolltwo();
    dice.total_score();
    expect(dice.outcome()).toBe("Fab luck! You're ready to gamble")
+ });
+
+ it("should prompt you have shit luck if your total is a 12", function(){
+   spyOn(Math, 'random').and.returnValue(0.9);
+   dice.rollone();
+   dice.rolltwo();
+   dice.total_score();
+   expect(dice.outcome()).toBe("12/12!")
  });
 
 });
