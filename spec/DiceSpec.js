@@ -32,4 +32,10 @@ describe("Dice", function() {
     expect(dice.rolltwo()).toBe(5);
   });
 
+  it("should prompt if the dice is less than 2", function() {
+    spyOn(window, "confirm").and.returnValue("Bad Luck, Keep Trying");
+    dice.total_roll();
+    expect(window.confirm).toHaveBeenCalledWith("Bad Luck, Keep Trying")
+  });
+
 });

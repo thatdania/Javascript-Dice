@@ -16,3 +16,9 @@ Dice.prototype.rolltwo = function(){
   this.score2 = this.die2
   return this.score2
 }
+
+Dice.prototype.total_roll = function(){
+  if(this.score1 + this.score2 < 2){
+    confirm('Bad Luck, Keep Trying')
+  }
+}
