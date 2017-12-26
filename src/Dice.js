@@ -1,20 +1,17 @@
 function Dice() {
   this.total = 0
+  this.game = 0
   this.score1 = 0
   this.score2 = 0
-  this.die1 = 0
-  this.die2 = 0
 }
 
 Dice.prototype.rollone = function(){
-  this.die1 = Math.floor(Math.random() * 6) + 1;
-  this.score1 = this.die1
+  this.score1 = Math.floor(Math.random() * 6) + 1;
   return this.score1
 }
 
 Dice.prototype.rolltwo = function(){
-  this.die2 = Math.floor(Math.random() * 6) + 1;
-  this.score2 = this.die2
+  this.score2  = Math.floor(Math.random() * 6) + 1;
   return this.score2
 }
 
@@ -25,17 +22,16 @@ Dice.prototype.total_score = function(){
 
 Dice.prototype.outcome = function(){
   if(this.total <= 2){
-     return "Shit luck, keep going"
+     return `You rolled ${this.total} Shit luck, keep going`
   }
   else if(this.total === 12) {
-    return "12/12!"
+    return `You rolled ${this.total} 12/12!`
   }
 
   else if(this.total >= 10) {
-    return "Fab luck! You're ready to gamble"
+    return `You rolled ${this.total} Fab luck! You're ready to gamble`
   }
-
   else {
-    return this.total
+    return "you rolled" + this.total
   }
 }
