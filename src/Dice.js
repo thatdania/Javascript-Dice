@@ -19,5 +19,14 @@ Dice.prototype.rolltwo = function(){
 }
 
 Dice.prototype.total_score = function(){
-  return this.score1 + this.score2
+  this.total = this.score1 + this.score2
+  return this.total
+}
+
+Dice.prototype.outcome = function(){
+  if(this.total <= 2){
+     return "Shit luck, keep going"
+  } else {
+    return this.total
+  }
 }

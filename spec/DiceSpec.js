@@ -40,6 +40,12 @@ describe("Dice", function() {
     expect(dice.total_score()).toBe(12)
   });
 
+ it("should prompt you have shit luck if your total is less than two", function(){
+   spyOn(Math, 'random').and.returnValue(0.3);
+   dice.rollone();
+   dice.rolltwo();
+   expect(dice.outcome()).toBe("Shit luck, keep going")
+ });
 
 
 
