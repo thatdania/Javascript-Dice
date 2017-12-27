@@ -26,6 +26,7 @@ cd views
 ```
 open dice.html
 ```
+5. Refresh the page if you want to reset your lucky rolls to 0!
 
 # User stories
 
@@ -43,14 +44,26 @@ I would like to roll between a 1 and 12
 
 ```
 As A Dice Roller,
-So I can know when I have shit luck,
-I would like to be prompted me "Bad luck try again"
+So I can know my total scoare from the two dice,
+I would like to see the total score for that roll"
 ```
 
 ```
 As A Dice Roller,
-So I can know when I have great luck,
-I would like to be prompted me "Amazing!"
+So I can know when I have good luck,
+I would like to be able to count my good luck"
+```
+
+```
+As A Dice Roller,
+So I can play a modern game for the dice,
+I would like to design to be practical where I can click a button to roll"
+```
+
+```
+As A Dice Roller,
+So I can roll again,
+I would like to reset my roll without changing my lucky rolls"
 ```
 
 ```

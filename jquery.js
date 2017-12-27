@@ -17,8 +17,6 @@ $(document).ready(function(){
       $('#two').html(`${game.rolls[1]}`)
     }
 
-
-      console.log(game.luckyrolls)
   });
 
   $('#resets').click(function(){
