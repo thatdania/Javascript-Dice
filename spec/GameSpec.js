@@ -41,4 +41,14 @@ describe("Game", function(){
     });
   });
 
+  describe("#loser", function(){
+    it("shows loser message if less than two", function(){
+      game.dice.roll = jasmine.createSpy('Return 6').and.returnValue(1)
+      game.rollAndSave();
+      game.rollAndSave();
+      game.totalCurrentScore();
+      expect(game.loserScore()).toEqual("You rolled 2! Bad Luck!")
+    });
+  });
+
 });

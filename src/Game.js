@@ -28,3 +28,9 @@ Game.prototype.perfectScore = function(){
     return `You rolled ${this.sum}! You are in great luck!`
   }
 };
+
+Game.prototype.loserScore = function(){
+  if(this.sum <= 2){
+    return `You rolled ${this.sum}! Bad Luck!`
+  }
+}
