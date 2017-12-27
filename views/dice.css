@@ -55,7 +55,7 @@ h2{
 	-webkit-border-radius: 50px;
 	border-radius: 400px;
   position: absolute;
-  top: 35%;
+  top: 42%;
   left: 81%;
 }
 
@@ -68,17 +68,26 @@ h2{
 }
 
 #lucky{
-  position: relative;
-  font-size: 60px;
-  color: rgb(207, 207, 207);
+position: absolute;
+font-size: 60px;
+color: rgb(238, 238, 238);
 float: left;
-top: 41%;
+top: 48%;
 left: 85%;
+}
 
+#luckborder{
+  width: 200px;
+	height: 40px;
+  background: rgb(238, 238, 238);
+  border-radius: 50px;
+  position: absolute;
+  left: 79%;
+  top: 33%;
 }
 
 #box{
-  background-color: rgb(207, 207, 207);
+  background-color: rgb(238, 238, 238);
   width: 640px;
   height: 650px;
   border-radius: 20px;
@@ -91,7 +100,7 @@ left: 85%;
 h3{
   position: absolute;
   font-size: 20px;
-  top: 30%;
+  top: 34%;
   left: 81%;
 }
 

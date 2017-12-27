@@ -9,7 +9,6 @@ $(document).ready(function(){
   $('#roll').click(function(){
     game.rollAndSave()
     if (game.rolls.length === 1) {
-
       $('#one').html(`${game.rolls[0]}`)
     } else if(game.rolls.length === 2) {
       $('#two').html(`${game.rolls[1]}`)
