@@ -51,4 +51,14 @@ describe("Game", function(){
     });
   });
 
+  describe("#resets", function(){
+    it("Resets the game", function(){
+      game.dice.roll = jasmine.createSpy('Return 6').and.returnValue(1)
+      game.rollAndSave();
+      game.rollAndSave();
+      game.reset();
+      expect(game.rounds).toEqual([])
+    });
+  });
+
 });

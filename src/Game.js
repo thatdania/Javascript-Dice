@@ -34,3 +34,7 @@ Game.prototype.loserScore = function(){
     return `You rolled ${this.sum}! Bad Luck!`
   }
 }
+
+Game.prototype.reset = function(){
+  game.rounds = []
+}
