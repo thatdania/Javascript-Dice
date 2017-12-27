@@ -22,12 +22,22 @@ describe("Game", function(){
     });
   });
 
-  describe("#showPreviousLog", function(){
+  describe("#totalCurrentScore", function(){
     it("shows the previous roll", function(){
       game.dice.roll = jasmine.createSpy('Return 1').and.returnValue(1)
       game.rollAndSave();
       game.rollAndSave();
-      expect(game.showPreviousLog()).toEqual(2)
+      expect(game.totalCurrentScore()).toEqual(2)
+    });
+  });
+
+  describe("#perfectScore", function(){
+    it("shows 12/12 you are in great luck", function(){
+      game.dice.roll = jasmine.createSpy('Return 6').and.returnValue(6)
+      game.rollAndSave();
+      game.rollAndSave();
+      game.totalCurrentScore();
+      expect(game.perfectScore()).toEqual("You rolled 12! You are in great luck!")
     });
   });
 

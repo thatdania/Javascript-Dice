@@ -1,6 +1,7 @@
 function Game(dice = Dice){
  this.rounds = []
  this.rolls = []
+ this.sum = 0
  this.dice = new dice();
 }
 
@@ -17,7 +18,13 @@ Game.prototype.log = function(){
   }
 };
 
-Game.prototype.showPreviousLog = function(){
-  var sum = this.rolls.reduce((o,t) => o + t);
-  return sum
-}
+Game.prototype.totalCurrentScore = function(){
+  this.sum = this.rolls.reduce((o,t) => o + t);
+  return this.sum
+};
+
+Game.prototype.perfectScore = function(){
+  if(this.sum === 12){
+    return `You rolled ${this.sum}! You are in great luck!`
+  }
+};
