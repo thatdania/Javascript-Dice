@@ -1,40 +1,30 @@
 function Game(dice = Dice){
- this.rounds = []
  this.rolls = []
+ this.rounds = []
  this.sum = 0
  this.dice = new dice();
 }
 
 Game.prototype.rollAndSave= function() {
+  if(this.rolls.length === 2){
+    confirm( "Roll again mate!")}
   this.rolls.push(this.dice.roll())
 };
 
-Game.prototype.log = function(){
-  if(this.rolls.length === 2){
-    this.rounds.push(this.rolls)
-    this.rolls = []
-  } else {
-    game.rollAndSave()
-  }
-};
-
 Game.prototype.totalCurrentScore = function(){
+  if(this.rolls.length != 2){
+    confirm("You've already rolled!")}
   this.sum = this.rolls.reduce((o,t) => o + t);
+  this.rounds.push(this.sum)
   return this.sum
 };
 
-Game.prototype.perfectScore = function(){
-  if(this.sum === 12){
-    return `You rolled ${this.sum}! You are in great luck!`
-  }
+Game.prototype.log = function(){
+  return this.rounds[0]
+
 };
 
-Game.prototype.loserScore = function(){
-  if(this.sum <= 2){
-    return `You rolled ${this.sum}! Bad Luck!`
-  }
-}
-
-Game.prototype.reset = function(){
-  game.rounds = []
-}
+Game.prototype.resets = function(){
+  game.rolls = []
+  this.rounds = []
+};
