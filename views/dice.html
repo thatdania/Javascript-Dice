@@ -1,18 +1,24 @@
 <html>
   <head>
     <title> Dice Training </title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-    <script src="../jquery.js"></script>
-    <script src="../src/Dice.js"></script>
-    <script src="../src/Log.js"></script>
-    <!-- <link rel='stylesheet' type='text/css' href='dice.css'> -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="../jquery.js"></script>
+  <script src="../src/Game.js"></script>
+  <script src="../src/Dice.js"></script>
+  <title> Dice Your Luck! </title>
   </head>
 
   <body>
-  <h2 id="total" class = "total"></h2>
-  <button id = "roll_first" class = "roll_first"> Roll First Dice! </button>
-  <button id = "roll_second" class = "roll_second"> Roll Second Dice! </button>
+    <h1> Dice Your Luck! </h1>
+    <h2> We always wanna see whether luck is on our side </h2>
+
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="sum"></div>
+    <button type="button" id="roll" name="Roll">Roll!</button>
+    <button type="button" id="resets" name="button">Reset!</button>
   </body>
 </html>
