@@ -2,3 +2,129 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  font-family: Bungee;
+  background:
+       -moz-radial-gradient(black15%, transparent 16%),
+       -moz-radial-gradient(black 15%, transparent 16%),
+       black;
+   background:
+       -webkit-radial-gradient(black 15%, transparent 16%),
+       -webkit-radial-gradient(black 15%, transparent 16%),
+       white;
+   background-position: 0 0, 100px 100px;
+
+   -webkit-background-size:200px 200px;
+   -moz-background-size:250px 250px;
+}
+
+h1{
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  left: 32%;
+}
+
+h2{
+  position: absolute;
+  font-size: 20px;
+  top: 60%;
+  left: 27%;
+}
+
+#one{
+  position: absolute;
+  font-size: 90px;
+  top: 23%;
+  left: 38%;
+}
+
+#two{
+  position: absolute;
+  font-size: 90px;
+  top: 23%;
+  left: 55%;
+}
+
+#circle{
+  width: 150px;
+	height: 150px;
+	background: rgb(14, 14, 13);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 400px;
+  position: absolute;
+  top: 35%;
+  left: 81%;
+}
+
+
+#sum{
+  position: absolute;
+  font-size: 50px;
+  top: 10%;
+  left: 32%;
+}
+
+#lucky{
+  position: relative;
+  font-size: 60px;
+  color: rgb(207, 207, 207);
+float: left;
+top: 41%;
+left: 85%;
+
+}
+
+#box{
+  background-color: rgb(207, 207, 207);
+  width: 640px;
+  height: 650px;
+  border-radius: 20px;
+  position: absolute;
+  top: 3%;
+  left: 24.5%;
+  box-shadow: 20px 20px;
+}
+
+h3{
+  position: absolute;
+  font-size: 20px;
+  top: 30%;
+  left: 81%;
+}
+
+#roll{
+  font-family: Bungee;
+  font-size: 50px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 70%;
+  left: 32%;
+  outline: none;
+  box-shadow: 5px 10px;
+}
+
+#roll:active{
+ transform: translateY(5px);
+ box-shadow: 2px 2px;
+}
+
+#resets{
+  font-family: Bungee;
+  font-size: 50px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  outline: none;
+  box-shadow: -5px 10px;
+}
+
+#resets:active{
+ transform: translateY(5px);
+ box-shadow: 2px 2px;
+}

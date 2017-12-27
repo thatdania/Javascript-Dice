@@ -30,13 +30,14 @@ describe("Game", function(){
     });
   });
 
-  describe("#log", function(){
-    it("Logs the previous roll", function(){
+  describe("#luckyRolls", function(){
+    it("counts lucky roles", function(){
       game.dice.roll = jasmine.createSpy('Return 6').and.returnValue(6)
       game.rollAndSave();
       game.rollAndSave();
-      game.totalCurrentScore()
-      expect(game.log()).toEqual(12)
+      game.totalCurrentScore();
+      game.luckyRolls();
+      expect(game.luckyrolls).toEqual(1)
     });
   });
 
