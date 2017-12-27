@@ -11,14 +11,14 @@ $(document).ready(function(){
     if (game.rolls.length === 1) {
       $('#one').html(`${game.rolls[0]}`)
     } else if(game.rolls.length === 2) {
-      $('#two').html(`${game.rolls[1]}`)
-      $('#sum').show(`fast`);
       $('#sum').html(`You rolled a ${game.totalCurrentScore()}!`)
-      $('#lucky').html(`${game.luckyRolls()}`)
+      game.luckyRolls()
+      $('#lucky').html(`${game.luckyrolls}`)
+      $('#two').html(`${game.rolls[1]}`)
     }
 
 
-      console.log(game.luckyRolls())
+      console.log(game.luckyrolls)
   });
 
   $('#resets').click(function(){
