@@ -11,7 +11,13 @@ Game.prototype.rollAndSave= function() {
 Game.prototype.log = function(){
   if(this.rolls.length === 2){
     this.rounds.push(this.rolls)
+    this.rolls = []
   } else {
     game.rollAndSave()
   }
 };
+
+Game.prototype.showPreviousLog = function(){
+  var sum = this.rolls.reduce((o,t) => o + t);
+  return sum
+}

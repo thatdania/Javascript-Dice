@@ -22,4 +22,13 @@ describe("Game", function(){
     });
   });
 
+  describe("#showPreviousLog", function(){
+    it("shows the previous roll", function(){
+      game.dice.roll = jasmine.createSpy('Return 1').and.returnValue(1)
+      game.rollAndSave();
+      game.rollAndSave();
+      expect(game.showPreviousLog()).toEqual(2)
+    });
+  });
+
 });
