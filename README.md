@@ -1,9 +1,13 @@
-# The Javascript Dice
+<h1 align="center">
+  # The Javascript Dice
+</h1>
 
 ![](images/dice.png)
 
 Inspired by the tutorials from CodeAcademy, I wanted to familiarise myself more
 with the Javascript syntax and logic by creating several games. Here, one shall be rolling two dices
+
+***
 
 # How to Use
 
@@ -27,6 +31,8 @@ cd views
 open dice.html
 ```
 5. Refresh the page if you want to reset your lucky rolls to 0!
+
+***
 
 # User stories
 
