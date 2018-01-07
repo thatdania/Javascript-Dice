@@ -1,5 +1,5 @@
 <h1 align="center">
-  # The Javascript Dice
+   The Javascript Dice
 </h1>
 
 ![](images/dice.png)
